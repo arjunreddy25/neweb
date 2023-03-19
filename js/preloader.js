@@ -21,10 +21,6 @@ loader.css({
       left: 0,
       width: '100%'
     })
-    loader.animate({
-      top: '0',
-      height: '100vh'
-    })
   }
       
       /* This line hide loader and show content */
