@@ -9,6 +9,10 @@
     background-color: var(--color4);
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --color1: #13005a;
     --color2: #00337c;
