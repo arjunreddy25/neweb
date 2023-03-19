@@ -1,7 +1,4 @@
-@font-face {
-    font-family: mainFont;
-    src: url(./fonts/cocomat/Cocomat\ Light-trial.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -19,6 +16,8 @@
     --color3: #1c82ad;
     --color4: #03c988;
     --color5: white;
+    --mainFont: 'Inter';
+    --gradient: linear-gradient(180deg, transparent, black, black, transparent);
 }
 
 body{
@@ -33,10 +32,6 @@ body{
 }
 
 .content{
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    background: black;
     display: none;
 }
 
@@ -49,13 +44,67 @@ body{
 }
 
 body h1{
-    font-family: mainFont, sans;
+    font-family: var(--mainFont);
+    font-weight: 800;
     font-size: 10rem;
-    margin: 15px;
+    margin: 0px;
     user-select: none;
+    background: var(--gradient);
+    z-index: 99;
 }
 
-body h1::before{
+.prePreH1{
+    font-family: var(--mainFont);
+    font-size: 10rem;
+    font-weight: 800;
+    margin-bottom: -275px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    user-select: none;
+    z-index: 0;
+}
+
+.preH1{
+    font-family: var(--mainFont);
+    font-size: 10rem;
+    font-weight: 800;
+    margin-bottom: -120px;
+    background: var(--gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    user-select: none;
+    z-index: 50;
+}
+
+.postH1{
+    font-family: var(--mainFont);
+    font-size: 10rem;
+    font-weight: 800;
+    margin-top: -120px;
+    background: var(--gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.842);
+    user-select: none;
+    z-index: 50;
+}
+
+.postPostH1{
+    font-family: var(--mainFont);
+    font-size: 10rem;
+    font-weight: 800;
+    margin-top: -275px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.774);
+    user-select: none;
+    z-index: 0;
+}
+
+
+/**body h1::before{
     content: '<';
     color: white;
     opacity: 80%;
@@ -65,7 +114,7 @@ body h1::after{
     content: '/>';
     color: white;
     opacity: 80%;
-}
+}**/
 
 body h1 span{
     color: var(--color4);

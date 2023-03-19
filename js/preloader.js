@@ -25,7 +25,7 @@ loader.css({
       
       /* This line hide loader and show content */
       setTimeout(function(){
-        $('.content').fadeIn("slow");
+        $('.content').fadeIn("fast");
         (loader).fadeOut("fast");
         /*Set time in milisec */
       },3500);
