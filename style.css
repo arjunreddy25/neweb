@@ -45,8 +45,8 @@ body{
 
 body h1{
     font-family: var(--mainFont);
-    font-weight: 800;
     font-size: 105px;
+    font-weight: 600;
     margin: 0px;
     user-select: none;
     background: var(--gradient);
@@ -56,11 +56,11 @@ body h1{
 .prePreH1{
     font-family: var(--mainFont);
     font-size: 105px;
-    font-weight: 800;
-    margin-bottom: -187.5px;
+    font-weight: 600;
+    margin-bottom: -174px;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
     user-select: none;
     z-index: 0;
 }
@@ -68,12 +68,12 @@ body h1{
 .preH1{
     font-family: var(--mainFont);
     font-size: 105px;
-    font-weight: 800;
-    margin-bottom: -90px;
+    font-weight: 600;
+    margin-bottom: -80px;
     background: var(--gradient);
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
     user-select: none;
     z-index: 50;
 }
@@ -81,12 +81,12 @@ body h1{
 .postH1{
     font-family: var(--mainFont);
     font-size: 105px;
-    font-weight: 800;
-    margin-top: -90px;
+    font-weight: 600;
+    margin-top: -80px;
     background: var(--gradient);
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.715);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
     user-select: none;
     z-index: 50;
 }
@@ -94,11 +94,11 @@ body h1{
 .postPostH1{
     font-family: var(--mainFont);
     font-size: 105px;
-    font-weight: 800;
-    margin-top: -187.5px;
+    font-weight: 600;
+    margin-top: -174px;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.703);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
     user-select: none;
     z-index: 0;
 }
