@@ -1,0 +1,58 @@
+@font-face {
+    font-family: mainFont;
+    src: url(./fonts/cocomat/Cocomat\ Light-trial.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::selection{
+    background-color: var(--color4);
+}
+
+:root{
+    --color1: #13005a;
+    --color2: #00337c;
+    --color3: #1c82ad;
+    --color4: #03c988;
+    --color5: white;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+.hero{
+    height: 90svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1{
+    font-family: mainFont, sans;
+    font-size: 10rem;
+    margin: 15px;
+}
+
+body h1::before{
+    content: '<';
+    color: white;
+    opacity: 80%;
+}
+
+body h1::after{
+    content: '/>';
+    color: white;
+    opacity: 80%;
+}
+
+body h1 span{
+    color: var(--color4);
+}
+
+body .desc{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
