@@ -23,12 +23,42 @@
 body{
     color: white;
     background-color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .loader{
     height: 10px;
     background-color: var(--color4);
     position: absolute;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+nav ul a:hover{
+    color: var(--color4);
+    border-bottom: 2px solid var(--color4);
+    transition-duration: 0.15s;
 }
 
 .content{
@@ -102,19 +132,6 @@ body h1{
     user-select: none;
     z-index: 0;
 }
-
-
-/**body h1::before{
-    content: '<';
-    color: white;
-    opacity: 80%;
-}
-
-body h1::after{
-    content: '/>';
-    color: white;
-    opacity: 80%;
-}**/
 
 body h1 span{
     color: var(--color4);
