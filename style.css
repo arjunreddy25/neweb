@@ -176,6 +176,12 @@ body h1{
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
     user-select: none;
     z-index: 0;
+    animation: openPrePre 1s;
+}
+
+@keyframes openPrePre {
+    from{margin-bottom: -280px;}
+    to{margin-bottom: -174px;}
 }
 
 .preH1{
@@ -189,6 +195,12 @@ body h1{
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
     user-select: none;
     z-index: 50;
+    animation: openPre 1s;
+}
+
+@keyframes openPre {
+    from{margin-bottom: -130px;}
+    to{margin-bottom: -80px;}
 }
 
 .postH1{
@@ -202,6 +214,13 @@ body h1{
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
     user-select: none;
     z-index: 50;
+    animation: openPost 1s;
+}
+
+
+@keyframes openPost {
+    from{margin-top: -130px;}
+    to{margin-top: -80px;}
 }
 
 .postPostH1{
@@ -214,6 +233,13 @@ body h1{
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
     user-select: none;
     z-index: 0;
+    animation: openPostPost 1s;
+}
+
+
+@keyframes openPostPost {
+    from{margin-top: -280px;}
+    to{margin-top: -174px;}
 }
 
 body h1 span{
