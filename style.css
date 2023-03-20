@@ -37,15 +37,15 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
     padding: 0px;
 }
@@ -66,6 +66,75 @@ nav ul li:hover{
     transform: translateY(-2px) scale(1.1);
     transition: .15s ease-in-out;
 }
+
+.cta {
+    padding: 0;
+    margin-right: 25px;
+    margin-left: auto;
+    border: none;
+    background: none;
+  }
+  
+.cta {
+    --primary-color: var(--color5);
+    --hovered-color: var(--color4);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .cta p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  .cta::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .cta p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Contact";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .cta:hover::after {
+    width: 100%;
+  }
+  
+  .cta:hover p::before {
+    width: 100%;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+  .cta svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
 
 .content{
     display: none;
