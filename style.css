@@ -199,7 +199,7 @@ body h1{
 }
 
 @keyframes openPre {
-    from{margin-bottom: -130px;}
+    from{margin-bottom: -100px;}
     to{margin-bottom: -80px;}
 }
 
@@ -219,7 +219,7 @@ body h1{
 
 
 @keyframes openPost {
-    from{margin-top: -130px;}
+    from{margin-top: -100px;}
     to{margin-top: -80px;}
 }
 
