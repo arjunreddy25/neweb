@@ -56,9 +56,9 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: var(--color4);
+    color: var(#fff);
     border-bottom: 2px solid var(--color4);
-    transition-duration: 0.15s;
+    transition-duration: 50ms;
 }
 
 .content{
