@@ -24,6 +24,7 @@ body{
     color: white;
     background-color: black;
     font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
 }
 
 .loader{
@@ -63,6 +64,12 @@ nav ul a:hover{
 
 .content{
     display: none;
+}
+
+#demo-canvas{
+    position: absolute;
+    top: 0px;
+    z-index: -50;
 }
 
 .hero{
