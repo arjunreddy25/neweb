@@ -53,8 +53,8 @@ nav ul{
 nav ul a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
-    font-weight: 550;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 nav ul a:hover{
@@ -64,7 +64,7 @@ nav ul a:hover{
 
 nav ul li:hover{
     transform: translateY(-2px) scale(1.1);
-    transition-duration: 300ms;
+    transition: .15s ease-in-out;
 }
 
 .content{
