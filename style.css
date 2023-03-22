@@ -18,6 +18,7 @@
     --color5: white;
     --mainFont: 'Inter';
     --gradient: linear-gradient(180deg, transparent, black, black, transparent);
+    --gradient-down: linear-gradient(180deg, transparent, black, black, black, transparent);
     scroll-behavior: smooth;
 }
 
@@ -40,8 +41,7 @@ body{
     justify-content: space-around;
     position: fixed;
     z-index: 99;
-    right: 50%;
-    left: 50%;
+    left: 10%;
 }
 
 nav{
@@ -166,16 +166,39 @@ nav ul li:hover{
 }
 
 .hero{
-    height: 90svh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 5%;
+}
+
+.pre{
+    position: relative;
+    font-family: var(--mainFont);
+    font-size: 175px;
+    font-weight: 600;
+    background: var(--gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
+    user-select: none;
 }
 
 body h1{
     font-family: var(--mainFont);
-    font-size: 105px;
+    font-size: 175px;
     font-weight: 600;
     margin: 0px;
     user-select: none;
@@ -183,89 +206,84 @@ body h1{
     z-index: 0;
 }
 
-.prePreH1{
+.post {
+    position: relative;
     font-family: var(--mainFont);
-    font-size: 105px;
+    font-size: 175px;
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: -174px;
+    background: var(--gradient-down);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
     user-select: none;
-    z-index: -2;
-    animation: openPrePre 1s;
 }
 
-@keyframes openPrePre {
+.pre3H1{
+    margin-bottom: -287px;
+    z-index: -3;
+    animation: openPre3 1s;
+}
+
+@keyframes openPre3 {
     from{margin-bottom: -280px;}
     to{margin-bottom: -174px;}
 }
 
-.preH1{
-    font-family: var(--mainFont);
-    font-size: 105px;
-    font-weight: 600;
-    margin-bottom: -80px;
-    background: var(--gradient);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
-    user-select: none;
-    z-index: -1;
-    animation: openPre 1s;
+.pre2H1{
+    margin-bottom: -307px;
+    z-index: -2;
+    animation: openPre2 1s;
 }
 
-@keyframes openPre {
+@keyframes openPre2 {
+    from{margin-bottom: -280px;}
+    to{margin-bottom: -174px;}
+}
+
+.pre1H1{
+    margin-bottom: -140px;
+    z-index: -1;
+    background: var(--gradient);
+    animation: openPre1 1s;
+}
+
+@keyframes openPre1 {
     from{margin-bottom: -100px;}
     to{margin-bottom: -80px;}
 }
 
-.postH1{
-    font-family: var(--mainFont);
-    font-size: 105px;
-    font-weight: 600;
-    margin-top: -80px;
-    background: var(--gradient);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
-    user-select: none;
+.post1H1{
+    margin-top: -140px;
     z-index: -1;
-    animation: openPost 1s;
+    animation: openPost1 1s;
 }
 
-
-@keyframes openPost {
+@keyframes openPost1 {
     from{margin-top: -100px;}
     to{margin-top: -80px;}
 }
 
-.postPostH1{
-    font-family: var(--mainFont);
-    font-size: 105px;
-    font-weight: 600;
-    margin-top: -174px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.55);
-    user-select: none;
+.post2H1{
+    margin-top: -307px;
     z-index: -2;
-    animation: openPostPost 1s;
+    animation: openPost2 1s;
 }
 
-
-@keyframes openPostPost {
+@keyframes openPost2 {
     from{margin-top: -280px;}
     to{margin-top: -174px;}
 }
 
-.section:nth-child(odd){
-    background-color: var(--color4);
+.post3H1{
+    margin-top: -287px;
+    z-index: -3;
+    animation: openPost3 1s;
 }
 
-.section:nth-child(even){
-    background-color: black;
+
+@keyframes openPost3 {
+    from{margin-top: -280px;}
+    to{margin-top: -174px;}
 }
 
 body h1 span{
