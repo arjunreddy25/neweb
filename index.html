@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neWeb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./fullpage.js/fullpage.css" />
+    <script type="text/javascript" src="./fullpage.js/fullpage.js"></script>
 </head>
 <body>
     <div class="loader"></div>
-    <div class="content">
+    <div class="content" >
         <div class="nav">
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#large-header">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="cta">
+            <!--<button class="cta">
                 <p>Contact</p>
                 <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
                 </svg>
-            </button>
+            </button>-->
         </div>
         <div id="large-header" class="hero large-header">
             <canvas id="demo-canvas"></canvas>
@@ -34,8 +37,29 @@
             <p class="postH1">neWeb</p>
             <p class="postPostH1">neWeb</p>
         </div>
+    <div id="fullpage">
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+        </div>
+        <div id="services" class="section">
+            <h2>Services</h2>
+        </div>
+        <div id="about" class="section">
+            <h2>About</h2>
+        </div>
+        <div id="about" class="section">
+            <h2>About</h2>
+        </div>
     </div>
-    </body>
+</div>
+<script>
+    new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true,
+    scrollHorizontally: true
+    });
+</script>
+</body>
     <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
     <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
     <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
