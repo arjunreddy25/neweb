@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: Rails;
+    font-weight: 400;
+    src: url("./fonts/Rails/SFProRailsRegular.ttf");
+}
+
 ::selection{
     background-color: var(--color4);
 }
@@ -18,6 +24,7 @@
     --color5: white;
     --mainFont: 'Inter';
     --secondFont: 'Poppins';
+    --tertFont: 'Rails';
     --gradient: linear-gradient(180deg, transparent, black, black, transparent);
     --gradient-down: linear-gradient(180deg, transparent, black, black, black, transparent);
     scroll-behavior: smooth;
@@ -52,14 +59,13 @@ nav{
     position: relative;
     margin-left: auto;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 6rem;
 }
 
 nav .logo{
     height: 30px;
-    position: relative;
-    margin-left: 20px;
 }
 
 nav a{
@@ -133,10 +139,10 @@ nav ul li:hover{
 
 .heroText .desc{
     padding: 10px 20%;
-    font-size: 1rem;
 }
 
 #blob{
+    display: none;
     position: absolute;
     width: 63px;
     transform: rotateZ(40deg);
@@ -148,11 +154,15 @@ nav ul li:hover{
     margin: 0;
 }
 
+.heroText h2 span{
+    font-style: italic;
+}
+
 .hero .buttons{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5rem;
     flex-grow: 0;   
 }
 
@@ -186,7 +196,7 @@ nav ul li:hover{
     background-color: var(--color4);
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: normal;
     margin: 0;
@@ -329,15 +339,21 @@ body h1{
 }
 
 body h1 span{
-    color: var(--color4);
+    color: var(--color4);  
 }
 
 body .desc{
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Poppins', sans-serif;
 }
 
 #fullpage div{
     background: black;
     z-index: 3;
+}
+
+.section h2{
+    font-size: 150px;
+    font-family: var(--tertFont);
+    font-weight: 400;
 }
