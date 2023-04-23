@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Futura;
+  src: url(./Assets/fonts/futura/futur.ttf);
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -3909,10 +3914,9 @@ html {
     background-color: #58dd29;
   }
   .logo-name {
-    font-family: Grifter, sans-serif;
+    font-family: Futura, sans-serif;
     color: #0f1825;
-    font-size: 1.3rem;
-    line-height: 1;
+    font-size: 1.8rem;
   }
   .primary-button {
     display: flex;
