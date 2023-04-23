@@ -3278,14 +3278,15 @@ html {
   .section-header26 {
     background-image: linear-gradient(
       180deg,
-      transparent 65%,
-      #0b111a 0,
-      #0f1825
-    );
+      transparent 65%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
   .header26_component {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
   .header26_image-wrapper {
