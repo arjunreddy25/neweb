@@ -3234,10 +3234,8 @@ html {
     margin-bottom: auto;
   }
   .navbar1_logo {
-    width: 56px;
-    height: 56px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    width: 36px;
+    height: 36px;
   }
   .navbar1_dropdown-list.w--open {
     padding: 0.5rem;
@@ -3501,8 +3499,8 @@ html {
   .cta7_component {
     display: -ms-grid;
     display: grid;
-    margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
     padding: 5rem 4rem;
     justify-content: space-between;
     align-items: center;
@@ -4855,7 +4853,7 @@ html {
       margin-right: 0;
     }
     .cta7_component {
-      margin-bottom: 6rem;
+      margin-bottom: 1rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
