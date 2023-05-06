@@ -3915,7 +3915,8 @@ html {
     background-color: #58dd29;
   }
   .logo-name {
-    font-family: Futura, sans-serif;
+    font-family: Grifter, sans-serif;
+    letter-spacing: 1px;
     color: #0f1825;
     font-size: 1.8rem;
   }
